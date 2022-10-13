@@ -18,6 +18,32 @@
     "footer footer footer";
 }
 
+.body_galeria {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 0.3fr auto auto 1fr;
+    grid-template-areas: 
+    "header header"
+    "banner banner"
+    "main main"
+    "footer footer";
+}
+
+.body_nosotros {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 0.3fr auto auto 1fr;
+    grid-template-areas: 
+    "header header"
+    "banner main"
+    "banner main"
+    "footer footer";
+}
+
 
 /* ------------------------------ HEADER ------------------------------------------ */
 
@@ -30,6 +56,7 @@
     background-color: #6b1630;
     border-bottom:groove 4px #ffbaaf;
     height: auto;
+    z-index: 999;
 }
 
 .nav {
@@ -78,6 +105,7 @@
     align-self: center;
     color: #444244;
     margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 .main_productos {   
@@ -87,8 +115,34 @@
     justify-self: center;
     align-self: center;
     color: #444244;
-    margin-top: 20px;  
+    margin-top: 20px; 
+    margin-bottom: 40px; 
 }
+
+.main_nosotros {   
+    grid-area: banner;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #444244;
+    width: auto;    
+    margin-top: 90px; 
+    margin-left: 80px;
+}
+
+.main_contacto {   
+    grid-area: banner;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #444244;
+    width: 500px;    
+    margin-top: 90px; 
+
+}
+
 
 .main_galeria {   
     grid-area: banner;
@@ -96,6 +150,8 @@
     align-self: center;
     color: #444244;
     margin-top: 20px;
+    margin-bottom: 50px;
+    width: 1000px;
 }
 
 .h1 {
@@ -106,12 +162,25 @@
 }
 
 .p {
-    width: 1000px;
     justify-self: center;
     text-align: center;
+    width: 1000px;
+}
+
+.p_nosotros {
+    justify-self: center;
+    text-align: center;
+
+}
+
+.p_galeria {
     margin-bottom: 60px;
 }
 
+/* .iframe_style {
+    margin-top: 100px;
+}
+ */
 /* -------------------------------------------------------------------------------- */
 /* ------------------------------ SECTION ------------------------------------------ */
 
@@ -119,14 +188,46 @@
     grid-area: main;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap; 
     width: auto;
 }
 
-/* .galeria__aside__img {
-} */
+.nosotros_img {
+    grid-area: main;
+    display: flex;
+}
 
+.galeria__aside__img {
+    width: auto;
+    height: 40%;
+}
+
+.imagen_galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nosotros_img_contenedor {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contacto_form_contenedor {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros_img {
+    height: auto;
+    width: 700px;
+}
 
 /* -------------------------------------------------------------------------------- */
 /* ------------------------------ TABLAS ------------------------------------------- */
@@ -186,13 +287,43 @@
 }
 
 /* -------------------------------------------------------------------------------- */
-/* ------------------------------ TABLAS ------------------------------------------- */
-
-
-
-/* -------------------------------------------------------------------------------- */
 /* ------------------------------ FORMULARIO -------------------------------------- */
 
+
+
+.fondo__form {
+    background-image: url(../multimedia/fondoFormulario2.jpg);
+    background-repeat: no-repeat;
+    color: black;
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.cajaForm {
+    background-color: #ffbaaf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px ;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* .sexo {
+    display: flex;
+    display: inline-block;
+    position: absolute;
+} */
+
+.hijosformulario {
+    margin: 0px 5px;
+}
 
 
 /* -------------------------------------------------------------------------------- */

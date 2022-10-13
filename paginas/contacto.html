@@ -5,31 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="../multimedia/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
-<body>
-    <header>
-        <nav>
-            <div>
-                <img src="multimedia/logo.png" alt="">
-            </div>
-            <ul>
-                <li><a class="link" href="../index.html">Inicio</a>
-                <li><a class="link" href="nosotros.html">Nosotros</a>
-                <li><a class="link" href="productos.html">Productos</a></li>
-                <li><a class="link" href="galeria.html">Galeria</a>
-            </ul>
+<body class="body_nosotros">
+    <header class="header">
+        <div>
+            <img class="sizeLogo" src="../multimedia/logo.png" alt="La Nube Dorada logo">
+        </div>
+        <ul class="lista nav">
+            <li><a class="link" href="../index.html">Inicio</a>
+            <li><a class="link" href="nosotros.html">Nosotros</a>
+            <li><a class="link" href="productos.html">Productos</a></li>
+            <li><a class="link" href="galeria.html">Galeria</a>
+        </ul>
     </header>
-    <main>
-
+    <main class="main_contacto">
+        <h1 class="h1">Nosotros</h1>
+            <p class="p_nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste earum dicta nam ex perferendis eos ea, sint voluptas ab eaque vitae quod mollitia nulla sapiente, ratione culpa. Dicta perferendis odit perspiciatis obcaecati ad autem accusantium ducimus animi aliquam! Rem, veniam quae vel non harum vero soluta accusamus! Quaerat maiores deserunt id non voluptatibus ea voluptates beatae, tempore maxime quae qui consequuntur in molestiae tempora ad obcaecati! Quia optio temporibus sint. Delectus possimus labore deleniti quisquam aspernatur! Eveniet maxime tempore eius? Sed magnam earum cumque, adipisci eaque fugiat! Veritatis quam ratione culpa sit officiis cum possimus sunt rerum iusto, sequi explicabo.</p>
     </main>
+
+    <section class="contacto_form_contenedor">
+        <form class="fondo__form" >
+            <div class="cajaForm">
+                <label class="hijosformulario" for="nombreApellido">Nombre</label>
+                <input type="text" name="nombreApellido">
+<!--                <div class="sexo">
+                        <label for="sexo" class="hijosformulario">Indica tu sexo</label>
+                        <input type="radio" class="hijosformulario" name="sexo" value="F"> F
+                        <input type="radio" class="hijosformulario" name="sexo" value="M"> M
+                        <input type="radio" class="hijosformulario" name="sexo" value="PE"> PE
+                    </div> -->
+                <label class="hijosformulario" for="correoElectronico">Email</label>
+                <input type="email" name="correoElectronico">
+                <label class="hijosformulario" for="comment">Deja un comentario</label>
+                <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </section>
     <section>
 
     </section>
-    <footer>
-
+    <footer class="footer footer_style">
+        <ul class="footer__lista">
+            <h3 class="footer_h3">Redes Sociales</h3>
+            <a class="link" href="https://www.facebook.com/NubeDoradaPanaderia"><li>Facebook</li></a>
+            <a class="link" href="https://www.instagram.com/lanubedorada_reposteria/"><li>Instagram</li></a>
+            <a class="link" href="https://www.tiktok.com/@lanubedoradareposteria"><li>Tik Tok</li></a>
+        </ul>
+        <ul class="footer__lista">
+            <h3 class="footer_h3">Contacto</h3>
+            <li>Wsp: +569 237 440 35</li>
+        </ul>
     </footer>
     <aside>
 
