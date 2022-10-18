@@ -23,7 +23,7 @@
     font-size: larger;
     display: grid;
     grid-template-columns:  1fr 1fr;
-    grid-template-rows: 0.3fr auto auto 1fr;
+    grid-template-rows: 0.3fr auto auto auto;
     grid-template-areas: 
     "header header"
     "banner banner"
@@ -151,7 +151,6 @@
     color: #444244;
     margin-top: 20px;
     margin-bottom: 50px;
-    width: 1000px;
 }
 
 .h1 {
@@ -165,6 +164,7 @@
     justify-self: center;
     text-align: center;
     width: 1000px;
+    
 }
 
 .p_nosotros {
@@ -187,28 +187,23 @@
 .galeria {
     grid-area: main;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-    flex-wrap: wrap; 
-    width: auto;
 }
+
+.galeria_img {
+    width: auto;
+    height: 600px;
+}
+
+/* .imagen_galeria {
+    width: auto;
+    height: 40%;
+} */
 
 .nosotros_img {
     grid-area: main;
     display: flex;
-}
-
-.galeria__aside__img {
-    width: auto;
-    height: 40%;
-}
-
-.imagen_galeria {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .nosotros_img_contenedor {
