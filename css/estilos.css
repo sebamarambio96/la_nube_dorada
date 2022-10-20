@@ -18,6 +18,14 @@
     "footer footer footer";
 }
 
+.bodyb {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    width: auto;
+    overflow-x: hidden
+}
+
+
 .body_galeria {
     font-family: 'Roboto', sans-serif;
     font-size: larger;
@@ -59,6 +67,18 @@
     z-index: 999;
 }
 
+.headerb {
+   /*  position: fixed; */
+    background-color: #6b1630;
+    border-bottom:groove 4px #ffbaaf;
+    z-index: 999;
+    width: 100%;
+    height: 12%;
+}
+
+.botonSandwich {
+    background-color: #c92a5a;
+}
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -66,15 +86,34 @@
     height: auto;
 }
 
+/* .navb {
+    width: auto;
+}
+ */
 .sizeLogo{
     margin-top: 6px;
     margin-left: 5px;
     height: 50px;
     width: 50px;
 }
+.sizeLogob{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+    width: 50px;
+}
 
 .lista li {
     padding: 20px 20px;
+    z-index: 1000;
+    list-style: none;
+}
+
+.listab li {
+    padding-left: 12px;
+    padding-right: 12px;
+    
     z-index: 1000;
     list-style: none;
 }
@@ -145,12 +184,11 @@
 
 
 .main_galeria {   
-    grid-area: banner;
+    display: flex;
+    align-items: center;
     justify-self: center;
     align-self: center;
     color: #444244;
-    margin-top: 20px;
-    margin-bottom: 50px;
 }
 
 .h1 {
@@ -165,6 +203,13 @@
     text-align: center;
     width: 1000px;
     
+}
+
+.p_galeria p{
+    width: auto;
+    justify-self: center;
+    text-align: center;
+    padding: 50px;
 }
 
 .p_nosotros {
@@ -194,6 +239,12 @@
 .galeria_img {
     width: auto;
     height: 600px;
+}
+
+.b {
+    grid-area: main;
+    width: 500px;
+    height: auto;
 }
 
 /* .imagen_galeria {
@@ -262,6 +313,14 @@
     grid-area: footer;
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
+}
+
+.footerb {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 20px;
 }
 
 .footer_style {
@@ -273,7 +332,6 @@
 .footer__lista {
     background-color: #6b1630;
     color: #ffbaaf;
-    padding: 20px 20px;
     list-style: none;
 }
 
