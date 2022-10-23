@@ -18,6 +18,19 @@
     "footer footer footer";
 }
 
+@media screen and (max-width: 320px) {
+    .body {
+    font-size: 38px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.1fr auto auto 1fr;
+    grid-template-areas: 
+    "header header"
+    "banner banner"
+    "main banner"
+    "footer footer";
+    }
+}
+
 .body_galeria {
     font-family: 'Roboto', sans-serif;
     font-size: larger;
@@ -83,16 +96,45 @@
     color: #ffbaaf;
 }
 
+@media screen and (max-width: 320px) {
+    .sizeLogo{
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .lista li {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+}
+
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------ BANNER ------------------------------------------ */
 
 .banner {
     grid-area: banner;
+    width: 100%;
+    height: auto;
 }
 
 .banner_img {
     width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 320px) {
+    .banner_img {
+    height: 1000px;
+    object-fit: cover;
+    }
+    .banner {
+        overflow: hidden;
+        display: flex;
+        justify-self: center;
+    }
 }
 
 
@@ -280,6 +322,14 @@
 .footer_h3 {
     padding-bottom: 15px;
 }
+
+@media screen and (max-width: 320px) {
+    .footer {
+        height: 500px;
+        
+    }
+}
+
 
 /* -------------------------------------------------------------------------------- */
 /* ------------------------------ FORMULARIO -------------------------------------- */
