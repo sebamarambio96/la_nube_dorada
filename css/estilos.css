@@ -109,7 +109,8 @@
 }
 
 .s {
-    max-width: 100%;
+    padding-left: 50px;
+    padding-bottom: 50px;
 }
 
 .botonSandwich {
@@ -362,11 +363,15 @@
         justify-self: center;
         text-align: center;
         width: 1000px;
-        font-size: 43px;
+        font-size: 38px;
     }
 
     .iframe{
         margin-top: 50px;
+    }
+
+    .main_galeria {
+        width: 100%;
     }
 }
 /* -------------------------------------------------------------------------------- */
@@ -540,34 +545,12 @@
 /* -------------------------------------------------------------------------------- */
 /* ------------------------------ FORMULARIO -------------------------------------- */
 
-
-
-.fondo__form {
-    width: 100%;
-    height: 600px;
-    margin-top: 89px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;    
-}
-
 .cajaForm {
     background-color: #ffbaaf;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px ;
     border-radius: 20px;
-    text-align: center;
 }
 
-/* .sexo {
-    display: flex;
-    display: inline-block;
-    position: absolute;
-} */
 
 .hijosformulario {
     margin: 0px 5px;
