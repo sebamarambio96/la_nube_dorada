@@ -109,8 +109,7 @@
 }
 
 .s {
-    padding-left: 50px;
-    padding-bottom: 50px;
+    max-width: 100%;
 }
 
 .botonSandwich {
@@ -363,15 +362,11 @@
         justify-self: center;
         text-align: center;
         width: 1000px;
-        font-size: 38px;
+        font-size: 43px;
     }
 
     .iframe{
         margin-top: 50px;
-    }
-
-    .main_galeria {
-        width: 100%;
     }
 }
 /* -------------------------------------------------------------------------------- */
@@ -544,6 +539,16 @@
 }
 /* -------------------------------------------------------------------------------- */
 /* ------------------------------ FORMULARIO -------------------------------------- */
+
+
+
+.fondo__form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+}
 
 .cajaForm {
     background-color: #ffbaaf;
