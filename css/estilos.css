@@ -55,14 +55,14 @@
 @media screen and (max-width: 768px) {
 
     .body {
-    font-size: 38px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 0.1fr auto auto 1fr;
-    grid-template-areas: 
-    "header header"
-    "banner banner"
-    "main main"
-    "footer footer";
+        font-size: 38px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 0.1fr auto auto 1fr;
+        grid-template-areas: 
+        "header header"
+        "banner banner"
+        "main main"
+        "footer footer";
     }
 
     .bodyb {
@@ -115,6 +115,7 @@
 .botonSandwich {
     background-color: #c92a5a;
 }
+
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -122,16 +123,13 @@
     height: auto;
 }
 
-/* .navb {
-    width: auto;
-}
- */
 .sizeLogo{
     margin-top: 6px;
     margin-left: 5px;
     height: 50px;
     width: 50px;
 }
+
 .sizeLogob{
     display: flex;
     align-items: center;
@@ -190,9 +188,10 @@
 
 @media screen and (max-width: 425px) {
     .banner_img {
-    height: 1000px;
-    object-fit: cover;
+        height: 1000px;
+        object-fit: cover;
     }
+
     .banner {
         overflow: hidden;
         display: flex;
@@ -202,9 +201,10 @@
 
 @media screen and (max-width: 768px) {
     .banner_img {
-    height: 900px;
-    object-fit: cover;
+        height: 900px;
+        object-fit: cover;
     }
+
     .banner {
         overflow: hidden;
         display: flex;
@@ -303,11 +303,6 @@
     margin-bottom: 60px;
 }
 
-/* .iframe_style {
-    margin-top: 100px;
-}
- */
-
 @media screen and (max-width: 768px) {
     .main {
         margin-top: 110px;
@@ -338,6 +333,7 @@
         text-align: center;
         padding: 10px;
     }
+
     .main_nosotros {
         grid-area: banner;
         display: flex;
@@ -389,11 +385,6 @@
     width: 500px;
     height: auto;
 }
-
-/* .imagen_galeria {
-    width: auto;
-    height: 40%;
-} */
 
 .nosotros_img {
     grid-area: main;
