@@ -1,0 +1,36 @@
+.tabla_diseño{
+    color: #ffbaaf;
+    border-collapse: collapse;
+}
+
+.tabla_diseño td{
+    padding: 10px;
+    background-color: #f6ede6;
+    color: #444244;
+}
+
+.tabla_diseño th{
+    background-color: #6b1630;
+    padding: 10px;
+    font-size: larger;
+}
+
+.imgtabla{
+    display: block;
+    height: 301px;
+    width: 354px;
+}
+
+.imgTablaAnimacion img{
+    transition: height 1s, width 1s;
+}
+
+.imgTablaAnimacion img:hover{
+    height: 500px;
+    width: auto;
+}
+
+.tabla_padre{
+    grid-area: main;
+    padding-bottom: 50pxs;
+}
