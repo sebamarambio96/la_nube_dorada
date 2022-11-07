@@ -2,7 +2,18 @@
 
 $colorPrincipal: #6b1630;
 $colorSecundario: #ffbaaf;
+$colorTerciario: #c92a5a;
 $colorFuente: #444244;
+$widthImgTabla: 301px;
+$heigthImgTabla: 354px;
+
+/* Mixins */
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Import */
 
@@ -14,6 +25,7 @@ $colorFuente: #444244;
 @import "./section";
 @import "./tablas";
 
+
 /*Body*/
 
 *{
@@ -21,19 +33,6 @@ $colorFuente: #444244;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-.body {
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    display: grid;
-    grid-template-columns: 1fr 7fr 8fr;
-    grid-template-rows: 0.3fr auto auto 1fr;
-    grid-template-areas: 
-    "header header header"
-    "banner banner banner"
-    "main main main"
-    "footer footer footer";
 }
 
 .bodyb {
@@ -44,63 +43,12 @@ $colorFuente: #444244;
 }
 
 
-.body_galeria {
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 0.3fr auto auto auto;
-    grid-template-areas: 
-    "header header"
-    "banner banner"
-    "main main"
-    "footer footer";
-}
-
-.body_nosotros {
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 0.3fr auto auto 1fr;
-    grid-template-areas: 
-    "header header"
-    "banner main"
-    "banner main"
-    "footer footer";
-}
-
 @media screen and (max-width: 768px) {
-
-    .body {
-        font-size: 38px;
-        grid-template-columns: auto auto;
-        grid-template-rows: 0.1fr auto auto 1fr;
-        grid-template-areas: 
-        "header header"
-        "banner banner"
-        "main main"
-        "footer footer";
-    }
-
     .bodyb {
         font-family: 'Roboto', sans-serif;
         font-size: larger;
         width: auto;
         overflow-x: hidden;
-    }
-
-    .body_nosotros {
-        font-family: 'Roboto', sans-serif;
-        font-size: larger;
-        display: grid;
-        grid-template-columns:  auto auto;
-        grid-template-rows: 0.3fr auto auto 1fr;
-        grid-template-areas: 
-        "header header"
-        "banner banner"
-        "main main"
-        "footer footer";
     }
 }
 

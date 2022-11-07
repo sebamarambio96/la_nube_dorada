@@ -1,41 +1,37 @@
 .main {   
-    grid-area: main;
     justify-self: center;
     align-self: center;
-    color: #444244;
+    color: $colorFuente;
     margin-top: 25px;
     margin-bottom: 40px;
+    margin-left: 320px;
 }
 
 .main_productos {   
-    grid-area: banner;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-self: center;
     align-self: center;
-    color: #444244;
+    color: $colorFuente;
     margin-top: 20px; 
     margin-bottom: 40px; 
+    margin-left: 30px;
+    width: auto;
 }
 
 .main_nosotros {   
-    grid-area: banner;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: space-between;
     align-items: center;
-    color: #444244;
+    color: $colorFuente;
     width: auto;    
     margin-top: 90px; 
     margin-left: 80px;
 }
 
 .main_contacto {   
-    grid-area: banner;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-self:flex-end;
-    color: #444244;
+    color: $colorFuente;
     width: 500px;    
     margin-top: 90px; 
 
@@ -46,7 +42,7 @@
     align-items: center;
     justify-self: center;
     align-self: center;
-    color: #444244;
+    color: $colorFuente;
 }
 
 .h1 {
@@ -66,14 +62,14 @@
 .p {
     justify-self: center;
     text-align: center;
-    width: 1000px;
+    width: 70%;
 }
 
-.p_galeria p{
-    width: auto;
+.p_productos {
     justify-self: center;
     text-align: center;
-    padding: 50px;
+    width: 90%;
+    margin-left: 58px;
 }
 
 .p_nosotros {
@@ -84,49 +80,58 @@
 
 .p_galeria {
     margin-bottom: 60px;
+        p{
+            width: auto;
+            justify-self: center;
+            text-align: center;
+            padding: 50px;
+        }
 }
 
 @media screen and (max-width: 768px) {
     .main {
-        margin-top: 110px;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 110px;
+        justify-self: center;
+        margin-top: 90px;
+        margin-left: 0px;
     }
 
     .h1 {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     
 
     .h1_galeria {
-        margin-top: 40px;
+        margin-top: 50px;
         margin-bottom: 30px;
     }
 
     .h1_nosotros {
-        margin-top: 10px;
+        margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 70px;
-    }
-
-    .p_galeria p{
-        width: auto;
-        justify-self: center;
         text-align: center;
-        padding: 10px;
     }
 
+    .p_galeria {
+        margin-bottom: 0px;
+        p{
+            width: auto;
+            justify-self: center;
+            text-align: center;
+            padding: 10px;
+        }
+    }
     .main_nosotros {
-        grid-area: banner;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-self: center;
         align-self: center;
-        color: #444244;
+        color: $colorFuente;
         margin-top: 5px; 
         margin-bottom: 80px; 
         margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main_productos {
         margin-right: 20px;
     }
 
@@ -141,10 +146,24 @@
         justify-self: center;
         text-align: center;
         width: 1000px;
-        font-size: 43px;
     }
 
-    .iframe{
-        margin-top: 50px;
+    .p_productos {
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .p {
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .iframe {
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
     }
 }

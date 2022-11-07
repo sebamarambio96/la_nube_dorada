@@ -1,18 +1,16 @@
-.tabla_diseño{
-    color: #ffbaaf;
+.tabla_diseño {
+    color: $colorSecundario;
     border-collapse: collapse;
-}
-
-.tabla_diseño td{
-    padding: 10px;
-    background-color: #f6ede6;
-    color: #444244;
-}
-
-.tabla_diseño th{
-    background-color: #6b1630;
-    padding: 10px;
-    font-size: larger;
+        td{
+            padding: 10px;
+            background-color: #f6ede6;
+            color: $colorFuente;
+        }
+        th{
+            background-color: $colorPrincipal;
+            padding: 10px;
+            font-size: larger;
+        }
 }
 
 .imgtabla{
@@ -21,16 +19,20 @@
     width: 354px;
 }
 
-.imgTablaAnimacion img{
+/* OPERADOR */
+
+.imgTablaAnimacion {
+    img{
     transition: height 1s, width 1s;
+    }
+    img:hover{
+        height: $heigthImgTabla*1.3;
+        width: auto;
+    }
 }
 
-.imgTablaAnimacion img:hover{
-    height: 500px;
-    width: auto;
-}
-
-.tabla_padre{
-    grid-area: main;
+.tabla_padre {
     padding-bottom: 50pxs;
+    width: 100%;
+    overflow: scroll;
 }

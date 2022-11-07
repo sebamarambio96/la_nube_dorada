@@ -1,5 +1,4 @@
 .galeria {
-    grid-area: main;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -11,27 +10,22 @@
 }
 
 .b {
-    grid-area: main;
+
     width: 500px;
     height: auto;
 }
 
 .nosotros_img {
-    grid-area: main;
     display: flex;
 }
 
 .nosotros_img_contenedor {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: flex-end;
 }
 
 .contacto_form_contenedor {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     width: 100%;
 }
 
@@ -42,7 +36,6 @@
 
 @media screen and (max-width: 768px) {
     .nosotros_img_contenedor {
-        grid-area: main;
         align-items: center;
     }
     

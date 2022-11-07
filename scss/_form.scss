@@ -7,7 +7,7 @@
 }
 
 .cajaForm {
-    background-color: #ffbaaf;
+    background-color: $colorSecundario;
     padding: 20px ;
     border-radius: 20px;
 }
@@ -17,7 +17,7 @@
     margin: 0px 5px;
 }
 
-.animacionForm input:focus{
+.animacionForm input:focus {
     transition: height 1s, width 1s;
 }
 

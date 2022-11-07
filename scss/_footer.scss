@@ -15,14 +15,14 @@
 }
 
 .footer_style {
-    background-color: #6b1630;
-    border-top: groove 4px #ffbaaf;
-    color: #ffbaaf;
+    background-color: $colorPrincipal;
+    border-top: groove 4px $colorSecundario;
+    color: $colorSecundario;
 }
 
 .footer__lista {
-    background-color: #6b1630;
-    color: #ffbaaf;
+    background-color: $colorPrincipal;
+    color: $colorSecundario;
     list-style: none;
 }
 
@@ -34,17 +34,17 @@
     position: fixed;
     bottom: 43%;
     right: 0px;
+        img{
+            display: block;
+            width: 50px;
+        }
 }
 
-.redes img{
-    display: block;
-    width: 50px;
-}
 
 @media screen and (max-width: 768px) {
     .footer {
         height: 550px;
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .footer_h3 {
@@ -62,3 +62,4 @@
     }
 
 }
+

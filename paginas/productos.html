@@ -4,27 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Nube Dorada</title>
-    <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Productos artesanales, frescos, de temporada y mucho más puedes encontrar en nuestro menú. Te invitamos a visitar contactarnos y preguntar por cualquiera de los productos que ofrecemos!">
+    <meta name="keywords" content="tortas, chocolate, panaderia, comida, dulce, san fernando, artesanal">
+    <title>La Nube Dorada - Productos</title>
+    <link rel="shortcut icon" href="../multimedia/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
 
 </head>
-<body class="body">
-    <header class="header">
-        <div>
-            <img class="sizeLogo" src="../multimedia/logo.png" alt="La Nube Dorada logo">
-        </div>
-        <ul class="lista nav animacion">
-                <li><a class="link" href="../index.html">Inicio</a>
-                <li><a class="link" href="nosotros.html">Nosotros</a>
-                <li><a class="link" href="galeria.html">Galeria</a>
-                <li><a class="link" href="contacto.html">Contacto</a>
-        </ul>
+<body class="bodyb">
+    <header class="navbrow col-xl-12">
+        <nav class="navbar navbar-expand-lg headerb">
+            <div class="container-fluid">
+                <img class="sizeLogob" src="../multimedia/logo.png" alt="La Nube Dorada logo">
+                <button class="navbar-toggler botonSandwich" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" id="navbarNav">
+                    <ul class="navbar-nav listab animacion">
+                        <li class="nav-item">
+                            <a class="nav-link link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
         
     </header>
     <main class="main_productos">
         <h1 class="h1">Productos</h1>
-        <p class="p">
+        <p class="p_productos">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type 
@@ -36,7 +57,7 @@
         </p>
     </main>
 
-    <section class="tabla_padre">  
+    <section class="tabla_padre col-xl-12">  
         <table class="tabla_diseño" border="1px" cellpadding="30px" bordercolor= "#ffbaaf">
             <th>Postre</th>
             <th>Tamaño</th>
@@ -111,5 +132,9 @@
             <li>Wsp: +569 237 440 35</li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 </html>

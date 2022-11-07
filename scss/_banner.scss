@@ -1,15 +1,11 @@
-.banner {
-    grid-area: banner;
-}
-
 .banner_img {
     width: 100%;
 }
 
 @media screen and (max-width: 425px) {
     .banner_img {
-        height: 1000px;
-        object-fit: cover;
+        height: 410px;
+        object-fit: none;
     }
 
     .banner {
@@ -21,8 +17,8 @@
 
 @media screen and (max-width: 768px) {
     .banner_img {
-        height: 900px;
-        object-fit: cover;
+        height: 410px;
+        object-fit: none;
     }
 
     .banner {
