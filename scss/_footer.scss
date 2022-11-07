@@ -1,10 +1,13 @@
 .footer {
-    grid-area: footer;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     width: 100%;
+}
+
+.map {
+    @extend .footer;
 }
 
 .footerb {
@@ -16,12 +19,24 @@
 
 .footer_style {
     background-color: $colorPrincipal;
+/*     border-top: groove 4px $colorSecundario; */
+    color: $colorSecundario;
+}
+
+.map_style {
+    background-color: $colorTerciario;
     border-top: groove 4px $colorSecundario;
     color: $colorSecundario;
 }
 
 .footer__lista {
     background-color: $colorPrincipal;
+    color: $colorSecundario;
+    list-style: none;
+}
+
+.map__lista {
+    background-color: $colorTerciario;
     color: $colorSecundario;
     list-style: none;
 }

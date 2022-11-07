@@ -69,6 +69,10 @@
     color: $colorTerciario;
 }
 
+.animacionb :hover{
+    color: $colorPrincipal;
+}
+
 @media screen and (max-width: 768px) {
     .sizeLogo{
         margin-top: 10px;
