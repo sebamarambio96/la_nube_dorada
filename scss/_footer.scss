@@ -8,6 +8,9 @@
 
 .map {
     @extend .footer;
+    flex-wrap: wrap;
+    height: auto;
+    overflow: scroll;
 }
 
 .footerb {
@@ -17,9 +20,14 @@
     padding: 20px;
 }
 
+.footer_style_index {
+    background-color: $colorPrincipal;
+    color: $colorSecundario;
+}
+
 .footer_style {
     background-color: $colorPrincipal;
-/*     border-top: groove 4px $colorSecundario; */
+    border-top: groove 4px $colorSecundario;
     color: $colorSecundario;
 }
 
@@ -39,6 +47,7 @@
     background-color: $colorTerciario;
     color: $colorSecundario;
     list-style: none;
+    text-align: center;
 }
 
 .footer_h3 {
@@ -69,6 +78,11 @@
     .width_footer {
         width: 100%;
     }
+
+/*     .map {
+        @extend .footer;
+        flex-direction: column;
+    } */
 }
 
 @media screen and (max-width: 768px) {

@@ -237,15 +237,24 @@
   padding: 20px;
   width: 100%; }
 
+.map {
+  flex-wrap: wrap;
+  height: auto;
+  overflow: scroll; }
+
 .footerb {
   display: flex;
   justify-content: space-evenly;
   width: auto;
   padding: 20px; }
 
+.footer_style_index {
+  background-color: #6b1630;
+  color: #ffbaaf; }
+
 .footer_style {
   background-color: #6b1630;
-  /*     border-top: groove 4px $colorSecundario; */
+  border-top: groove 4px #ffbaaf;
   color: #ffbaaf; }
 
 .map_style {
@@ -261,7 +270,8 @@
 .map__lista {
   background-color: #c92a5a;
   color: #ffbaaf;
-  list-style: none; }
+  list-style: none;
+  text-align: center; }
 
 .footer_h3 {
   padding-bottom: 15px; }
@@ -281,7 +291,11 @@
   .footer_h3 {
     padding-bottom: 70px; }
   .width_footer {
-    width: 100%; } }
+    width: 100%; }
+  /*     .map {
+        @extend .footer;
+        flex-direction: column;
+    } */ }
 
 @media screen and (max-width: 768px) {
   .redes {
