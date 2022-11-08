@@ -239,8 +239,7 @@
 
 .map {
   flex-wrap: wrap;
-  height: auto;
-  overflow: scroll; }
+  height: auto; }
 
 .footerb {
   display: flex;
@@ -292,10 +291,8 @@
     padding-bottom: 70px; }
   .width_footer {
     width: 100%; }
-  /*     .map {
-        @extend .footer;
-        flex-direction: column;
-    } */ }
+  .scroll {
+    overflow: scroll; } }
 
 @media screen and (max-width: 768px) {
   .redes {
@@ -387,8 +384,7 @@
 
 .tabla_padre {
   padding-bottom: 50pxs;
-  width: 100%;
-  overflow: scroll; }
+  width: 100%; }
 
 /*Body*/
 * {
