@@ -10,7 +10,6 @@
     @extend .footer;
     flex-wrap: wrap;
     height: auto;
-    overflow: scroll;
 }
 
 .footerb {
@@ -79,10 +78,9 @@
         width: 100%;
     }
 
-/*     .map {
-        @extend .footer;
-        flex-direction: column;
-    } */
+    .map {
+        overflow: scroll;
+    }
 }
 
 @media screen and (max-width: 768px) {
