@@ -29,9 +29,13 @@
     width: 100%;
 }
 
-.nosotros_img {
+.nosotros_contenedor {
     height: auto;
     width: 700px;
+}
+
+.hCarrusel {
+    height: 100px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -44,3 +48,4 @@
         width: 100%;
     }
 }
+

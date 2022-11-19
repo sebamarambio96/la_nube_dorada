@@ -1,10 +1,45 @@
-.main {   
-    justify-self: center;
-    align-self: center;
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     color: $colorFuente;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    margin-left: 320px;
+    height: 25rem;
+    padding: 10px;
+}
+
+.mainNosotros {   
+    @include flex-column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $colorFuente;
+}
+
+.mainGaleria {   
+    @include flex-column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $colorFuente;
+}
+
+.mainContacto {   
+    @include flex-column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $colorFuente;
+    height: 40rem;
+}
+
+.sectionContacto {   
+    @include flex-column;
+    justify-content: space-evenly;
+    color: $colorFuente;
+    height: 40rem;
+    padding: 20px;
+}
+
+.lndEstilo {
+    color: $colorTerciario;
 }
 
 .main_productos {   
@@ -18,49 +53,11 @@
     width: auto;
 }
 
-.main_nosotros {   
-    @include flex-column;
-    justify-content: space-between;
-    align-items: center;
-    color: $colorFuente;
-    width: auto;    
-    margin-top: 90px; 
-    margin-left: 80px;
-}
-
-.main_contacto {   
-    @include flex-column;
-    justify-self:flex-end;
-    color: $colorFuente;
-    width: 500px;    
-    margin-top: 90px; 
-
-}
-
-.main_galeria {   
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    color: $colorFuente;
-}
-
 .h1 {
-    height: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-.h1_galeria {
-    height: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
     text-align: center;
 }
 
 .p {
-    justify-self: center;
     text-align: center;
     width: 70%;
 }
@@ -72,80 +69,40 @@
     margin-left: 58px;
 }
 
-.p_nosotros {
-    justify-self: center;
-    text-align: center;
-
-}
-
-.p_galeria {
-    margin-bottom: 60px;
-        p{
-            width: auto;
-            justify-self: center;
-            text-align: center;
-            padding: 50px;
-        }
-}
-
 @media screen and (max-width: 768px) {
     .main {
-        justify-self: center;
-        margin-top: 90px;
-        margin-left: 0px;
+        height: 40rem;
+        justify-content: space-around;
     }
 
     .h1 {
-        margin-top: 50px;
-    }
-    
-
-    .h1_galeria {
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-
-    .h1_nosotros {
-        margin-top: 30px;
-        margin-bottom: 30px;
         text-align: center;
+        font-size: 32px;
     }
 
-    .p_galeria {
-        margin-bottom: 0px;
-        p{
-            width: auto;
-            justify-self: center;
-            text-align: center;
-            padding: 10px;
-        }
+    .mainNosotros {
+        height: 60rem;
+        padding: 40px;
+        justify-content: space-around;
     }
-    .main_nosotros {
-        @include flex-column;
-        justify-self: center;
-        align-self: center;
-        color: $colorFuente;
-        margin-top: 5px; 
-        margin-bottom: 80px; 
-        margin-left: 20px;
-        margin-right: 20px;
+
+    .mainGaleria {
+        height: 35rem;
+        padding: 40px;
+        justify-content: space-around;
     }
 
     .main_productos {
         margin-right: 20px;
     }
 
-    .main_contacto {   
-        justify-self: center;
-        width: 500px;    
-        margin-top: 90px; 
-    
+    .mainContacto {   
+        height: 38rem;
+        padding: 30px;
     }
 
-    .p_nosotros {
-        justify-self: center;
-        text-align: center;
-        width: 1000px;
+    .sectionContacto {   
+        height: 25rem;
     }
 
     .p_productos {
@@ -156,8 +113,6 @@
     }
 
     .p {
-        justify-self: center;
-        text-align: center;
         width: 100%;
     }
 

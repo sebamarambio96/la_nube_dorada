@@ -2,7 +2,7 @@
 
 $colorPrincipal: #6b1630;
 $colorSecundario: #ffbaaf;
-$colorTerciario: #c92a5a;
+$colorTerciario: #b8224f;
 $colorFuente: #444244;
 $widthImgTabla: 301px;
 $heigthImgTabla: 354px;
@@ -38,17 +38,5 @@ $heigthImgTabla: 354px;
 .bodyb {
     font-family: 'Roboto', sans-serif;
     font-size: larger;
-    width: auto;
-    overflow-x: hidden;
-}
-
-
-@media screen and (max-width: 768px) {
-    .bodyb {
-        font-family: 'Roboto', sans-serif;
-        font-size: larger;
-        width: auto;
-        overflow-x: hidden;
-    }
 }
 

@@ -10,7 +10,6 @@
 }
 
 .headerb {
-   /*  position: fixed; */
     background-color: $colorPrincipal;
     border-bottom:groove 4px $colorSecundario;
     z-index: 999;
@@ -62,7 +61,7 @@
 }
 
 .link {
-    color: $colorSecundario;
+    color: rgb(221, 220, 220);
 }
 
 .animacion :hover{

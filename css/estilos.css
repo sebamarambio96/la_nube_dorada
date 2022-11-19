@@ -116,6 +116,10 @@
     background-color: #c92a5a;
 }
 
+.navbar-toggler-icon {
+    z-index: 200;
+}
+
 .nav {
     display: flex;
     justify-content: flex-end;
