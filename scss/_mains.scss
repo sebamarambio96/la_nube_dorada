@@ -46,12 +46,11 @@
 
 .mainProducto {
     @include flex-column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     color: $colorFuente;
-    height: 50rem;
-    width: 80rem;
-    padding: 20px;
+    width: 50%;
+    padding-left: 30px;
 }
 
 .h1 {
@@ -69,11 +68,11 @@
 }
 
 .pProducto {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .pPrecio {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .botonProducto {
@@ -126,7 +125,10 @@
         padding: 30px;
     }
 
-
+    .mainProducto {
+        width: 100%;
+        padding-left: 30px;
+    }
 
     .p {
         width: 100%;

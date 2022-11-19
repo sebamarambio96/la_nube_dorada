@@ -39,3 +39,12 @@ $heigthImgTabla: 354px;
     font-size: larger;
 }
 
+.btn {
+    background-color: $colorTerciario;
+    border-color: $colorTerciario;
+}
+
+.btn:hover {
+    background-color: #ed2c66;
+    color: white;
+}

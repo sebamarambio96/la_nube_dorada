@@ -47,12 +47,11 @@
 .mainProducto {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   color: #444244;
-  height: 50rem;
-  width: 80rem;
-  padding: 20px; }
+  width: 50%;
+  padding-left: 30px; }
 
 .h1 {
   text-align: center; }
@@ -66,10 +65,10 @@
   width: 70%; }
 
 .pProducto {
-  font-size: 35px; }
+  font-size: 25px; }
 
 .pPrecio {
-  font-size: 30px; }
+  font-size: 20px; }
 
 .botonProducto {
   width: 10rem;
@@ -102,6 +101,9 @@
   .mainContacto {
     height: 38rem;
     padding: 30px; }
+  .mainProducto {
+    width: 100%;
+    padding-left: 30px; }
   .p {
     width: 100%; }
   .iframe {
@@ -318,14 +320,6 @@
   height: 40rem;
   padding: 20px; }
 
-.btn {
-  background-color: #b8224f;
-  border-color: #b8224f; }
-
-.btn:hover {
-  background-color: #ed2c66;
-  color: white; }
-
 .linkProducto {
   color: white; }
 
@@ -352,3 +346,11 @@
 .bodyb {
   font-family: 'Roboto', sans-serif;
   font-size: larger; }
+
+.btn {
+  background-color: #b8224f;
+  border-color: #b8224f; }
+
+.btn:hover {
+  background-color: #ed2c66;
+  color: white; }
