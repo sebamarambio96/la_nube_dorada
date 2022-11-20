@@ -1,46 +1,28 @@
+@charset "UTF-8";
 /* Variables */
 /* Mixins */
 /* Import */
-.main {
+/* Ya que me acomoda trabajar por etiqueta ordene mi scss por seccion del html */
+/* Aquí se creo codigo repetido para más adelante ajustar el tamaño de los contenedores segun el texto de la pagina en la vista responsiva */
+.mainNosotros, .main, .mainGaleria, .mainContacto, .mainProductos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: #444244;
+  color: #444244; }
+  .mainNosotros p, .main p, .mainGaleria p, .mainContacto p, .mainProductos p {
+    text-align: center;
+    font-size: 20px;
+    width: 70%; }
+
+.main {
   height: 25rem;
   padding: 10px; }
 
-.mainNosotros {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #444244; }
-
-.mainGaleria {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #444244; }
-
 .mainContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #444244;
   height: 40rem; }
 
-.lndEstilo {
-  color: #b8224f; }
-
 .mainProductos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #444244;
   height: 23rem;
   padding: 20px; }
 
@@ -52,17 +34,8 @@
   color: #444244;
   width: 50%;
   padding-left: 30px; }
-
-.h1 {
-  text-align: center; }
-
-.h1Producto {
-  font-size: 5rem; }
-
-.p {
-  text-align: center;
-  font-size: 20px;
-  width: 70%; }
+  .mainProducto h1 {
+    font-size: 5rem; }
 
 .pProducto {
   font-size: 25px; }
@@ -70,56 +43,56 @@
 .pPrecio {
   font-size: 20px; }
 
+.h1Main {
+  color: #444244; }
+
 .botonProducto {
   width: 10rem;
   height: 3rem;
   font-size: 20px; }
 
-@media screen and (max-width: 1025px) {
-  .main {
-    height: 40rem;
-    justify-content: space-around; }
-  .mainProducto {
-    height: 30rem; }
-  .h1 {
-    text-align: center;
-    font-size: 32px; }
-  .h1Producto {
-    font-size: 3rem; }
+@media screen and (max-width: 768px) {
   .pProducto {
     font-size: 20px; }
   .pPrecio {
     font-size: 15px; }
-  .mainNosotros {
+  .mainNosotros, .main, .mainGaleria, .mainContacto, .mainProductos {
     height: 60rem;
     padding: 40px;
     justify-content: space-around; }
+    .mainNosotros p, .main p, .mainGaleria p, .mainContacto p, .mainProductos p {
+      width: 100%; }
+  .main {
+    height: 50rem;
+    justify-content: space-around; }
+    .main p {
+      width: 100%; }
+  .mainProductos {
+    height: 44rem; }
+  .mainProducto {
+    height: 30rem; }
+    .mainProducto h1 {
+      font-size: 3rem; }
   .mainGaleria {
     height: 35rem;
     padding: 40px;
     justify-content: space-around; }
+    .mainGaleria p {
+      width: 100%; }
   .mainContacto {
     height: 38rem;
     padding: 30px; }
+    .mainContacto p {
+      width: 100%; }
   .mainProducto {
     width: 100%;
     padding-left: 30px; }
-  .p {
-    width: 100%; }
+    .mainProducto p {
+      width: 100%; }
   .iframe {
     margin-top: 0px;
     width: 100%;
     height: auto; } }
-
-.header {
-  display: flex;
-  width: 100%;
-  height: 8%;
-  position: fixed;
-  background-color: #6b1630;
-  border-bottom: groove 4px #ffbaaf;
-  height: auto;
-  z-index: 999; }
 
 .headerb {
   background-color: #6b1630;
@@ -127,9 +100,6 @@
   z-index: 999;
   width: 100%;
   height: 12%; }
-
-.s {
-  max-width: 100%; }
 
 .botonSandwich {
   background-color: #b8224f; }
@@ -140,12 +110,6 @@
   width: 100%;
   height: auto; }
 
-.sizeLogo {
-  margin-top: 6px;
-  margin-left: 5px;
-  height: 50px;
-  width: 50px; }
-
 .sizeLogob {
   display: flex;
   align-items: center;
@@ -153,25 +117,11 @@
   height: 50px;
   width: 50px; }
 
-.lista li {
-  padding: 20px 20px;
-  z-index: 1000;
-  list-style: none; }
-
 .listab li {
   padding-left: 12px;
   padding-right: 12px;
   z-index: 1000;
   list-style: none; }
-
-.link {
-  color: #dddcdc; }
-
-.animacion :hover {
-  color: #b8224f; }
-
-.animacionb :hover {
-  color: #6b1630; }
 
 @media screen and (max-width: 768px) {
   .sizeLogo {
@@ -183,33 +133,40 @@
     font-size: 45px;
     margin-top: 10px; } }
 
-.banner_img {
+.banner img {
   width: 100%; }
 
 @media screen and (max-width: 425px) {
-  .banner_img {
-    height: 410px;
-    object-fit: none; }
   .banner {
     overflow: hidden;
     display: flex;
-    justify-self: center; } }
+    justify-self: center; }
+    .banner img {
+      height: 410px;
+      object-fit: none; } }
 
 @media screen and (max-width: 768px) {
-  .banner_img {
-    height: 410px;
-    object-fit: none; }
   .banner {
     overflow: hidden;
     display: flex;
-    justify-self: center; } }
+    justify-self: center; }
+    .banner img {
+      height: 410px;
+      object-fit: none; } }
 
-.footer {
+footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-  width: 100%; }
+  width: 100%;
+  background-color: #6b1630;
+  border-top: groove 4px #ffbaaf;
+  color: #ffbaaf; }
+  footer li {
+    background-color: #6b1630;
+    color: #ffbaaf;
+    list-style: none; }
 
 .map {
   display: flex;
@@ -218,41 +175,16 @@
   padding: 20px;
   width: 100%;
   flex-wrap: wrap;
-  height: auto; }
-
-/* .footerb {
-    display: flex;
-    justify-content: space-evenly;
-    width: auto;
-    padding: 20px;
-} */
-.footer_style_index {
-  background-color: #6b1630;
-  color: #ffbaaf; }
-
-.footer_style {
+  height: auto;
   background-color: #6b1630;
   border-top: groove 4px #ffbaaf;
-  color: #ffbaaf; }
-
-.map_style {
-  background-color: #b8224f;
-  border-top: groove 4px #ffbaaf;
-  color: #ffbaaf; }
-
-.footer__lista {
-  background-color: #6b1630;
   color: #ffbaaf;
-  list-style: none; }
-
-.map__lista {
-  background-color: #b8224f;
-  color: #ffbaaf;
-  list-style: none;
-  text-align: center; }
-
-.footer_h3 {
-  padding-bottom: 15px; }
+  background-color: #b8224f; }
+  .map li {
+    background-color: #b8224f;
+    color: #ffbaaf;
+    list-style: none;
+    text-align: center; }
 
 .redes {
   position: fixed;
@@ -263,51 +195,18 @@
     width: 50px; }
 
 @media screen and (max-width: 768px) {
-  .footer {
+  footer {
     flex-direction: column;
     text-align: center; }
-  .footer_h3 {
-    padding-bottom: 70px; }
   .scroll {
     overflow: scroll; }
   .redes {
     display: none; } }
 
-.fondo__form {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
-
-.cajaForm {
-  background-color: #ffbaaf;
-  padding: 20px;
-  border-radius: 20px; }
-
-.hijosformulario {
-  margin: 0px 5px; }
-
-.animacionForm input:focus {
-  transition: height 1s, width 1s; }
-
-.animacionForm input:focus {
-  height: 500px;
-  width: auto; }
-
-.galeria {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
-
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-.h2 {
-  text-align: center;
-  padding-bottom: 40px; }
 
 .sectionProductos {
   width: 100%; }
@@ -323,20 +222,16 @@
 .linkProducto {
   color: white; }
 
-.b {
-  width: 500px;
-  height: auto; }
-
-.contacto_form_contenedor {
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
+.cajaForm {
+  background-color: #ffbaaf;
+  padding: 20px;
+  border-radius: 20px; }
 
 @media screen and (max-width: 768px) {
   .sectionContacto {
     height: 25rem; } }
 
-/*Body*/
+/*Body Y Generales*/
 * {
   margin: 0;
   padding: 0;
@@ -350,7 +245,38 @@
 .btn {
   background-color: #b8224f;
   border-color: #b8224f; }
+  .btn:hover {
+    background-color: #ed2c66;
+    color: white; }
 
-.btn:hover {
-  background-color: #ed2c66;
-  color: white; }
+.lndEstilo {
+  color: #b8224f; }
+
+h3 {
+  padding-bottom: 15px; }
+
+h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #b8224f; }
+
+h1 {
+  text-align: center;
+  color: #b8224f; }
+
+.link {
+  text-decoration: none;
+  color: whitesmoke; }
+
+.animacion:hover {
+  color: #b8224f; }
+
+.animacionb:hover {
+  color: #6b1630; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 32px; }
+  p {
+    width: 100%; } }

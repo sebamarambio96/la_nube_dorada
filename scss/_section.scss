@@ -1,18 +1,7 @@
-.galeria {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.h2 {
-    text-align: center;
-    padding-bottom: 40px;
 }
 
 .sectionProductos {
@@ -31,15 +20,10 @@
     color: white;
 }
 
-.b {
-
-    width: 500px;
-    height: auto;
-}
-
-.contacto_form_contenedor {
-    @include flex-column;
-    width: 100%;
+.cajaForm {
+    background-color: $colorSecundario;
+    padding: 20px ;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {

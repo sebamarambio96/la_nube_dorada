@@ -4,8 +4,6 @@ $colorPrincipal: #6b1630;
 $colorSecundario: #ffbaaf;
 $colorTerciario: #b8224f;
 $colorFuente: #444244;
-$widthImgTabla: 301px;
-$heigthImgTabla: 354px;
 
 /* Mixins */
 
@@ -14,18 +12,16 @@ $heigthImgTabla: 354px;
     flex-direction: column;
 }
 
-
-/* Import */
+/* Import */ /* Ya que me acomoda trabajar por etiqueta ordene mi scss por seccion del html */
 
 @import "./mains";
 @import "./header";
 @import "./banner";
 @import "./footer";
-@import "./form";
 @import "./section";
 
 
-/*Body*/
+/*Body Y Generales*/
 
 *{
     margin: 0;
@@ -42,9 +38,56 @@ $heigthImgTabla: 354px;
 .btn {
     background-color: $colorTerciario;
     border-color: $colorTerciario;
+        &:hover {
+            background-color: #ed2c66;
+            color: white;
+        }
+    }
+
+.lndEstilo{
+    color:$colorTerciario
 }
 
-.btn:hover {
-    background-color: #ed2c66;
-    color: white;
+h3 {
+    padding-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    color: $colorTerciario;
+}
+
+h1 {
+    text-align: center;
+    color: $colorTerciario;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+        
+}
+
+.animacion {
+    &:hover {
+        color: $colorTerciario;
+    }
+}
+
+.animacionb {
+    &:hover {
+        color: $colorPrincipal;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    p {
+        width: 100%;
+    }
 }

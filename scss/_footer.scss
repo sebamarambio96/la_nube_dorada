@@ -1,9 +1,17 @@
-.footer {
+footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     width: 100%;
+    background-color: $colorPrincipal;
+    border-top: groove 4px $colorSecundario;
+    color: $colorSecundario;
+        li{
+            background-color: $colorPrincipal;
+            color: $colorSecundario;
+            list-style: none;
+        }
 }
 
 .map {
@@ -14,47 +22,16 @@
     width: 100%;
     flex-wrap: wrap;
     height: auto;
-}
-
-/* .footerb {
-    display: flex;
-    justify-content: space-evenly;
-    width: auto;
-    padding: 20px;
-} */
-
-.footer_style_index {
-    background-color: $colorPrincipal;
-    color: $colorSecundario;
-}
-
-.footer_style {
     background-color: $colorPrincipal;
     border-top: groove 4px $colorSecundario;
     color: $colorSecundario;
-}
-
-.map_style {
     background-color: $colorTerciario;
-    border-top: groove 4px $colorSecundario;
-    color: $colorSecundario;
-}
-
-.footer__lista {
-    background-color: $colorPrincipal;
-    color: $colorSecundario;
-    list-style: none;
-}
-
-.map__lista {
-    background-color: $colorTerciario;
-    color: $colorSecundario;
-    list-style: none;
-    text-align: center;
-}
-
-.footer_h3 {
-    padding-bottom: 15px;
+        li {
+            background-color: $colorTerciario;
+            color: $colorSecundario;
+            list-style: none;
+            text-align: center;
+        }
 }
 
 .redes {
@@ -68,13 +45,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
+    footer {
         flex-direction: column;
         text-align: center;
-    }
-
-    .footer_h3 {
-        padding-bottom: 70px;
     }
 
     .scroll {
